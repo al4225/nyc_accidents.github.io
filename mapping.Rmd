@@ -86,7 +86,9 @@ map_data %>%
 
 
 ## Mapping: Number of Injuries
+To visualize the number of injuries in each accidents, we employ the latitude and longitude of each accidents to see where have the most injuries.  
 
+From the plot, we can tell that the maximum injuries in one accident is 30 people. But most accidents have injuries less than 5. A few accidents have more than 5 injuries.  
 ```{r, message = FALSE, warning=FALSE}
 accidents_2020_map = NYC_data1 %>% 
   filter(!is.na(borough)) %>% 
